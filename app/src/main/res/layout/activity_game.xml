@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDarkGrey"
+    android:id="@+id/container">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="START"
+        android:id="@+id/tv_round"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:textSize="@dimen/text_size_score"
+        android:paddingLeft="@dimen/padding_left"
+        android:layout_marginBottom="10sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/tv_time"
+        android:paddingTop="15sp"
+        android:textColor="@color/color_hint_time"
+        android:layout_alignParentBottom="true"
+        android:textSize="@dimen/text_size_time"
+        android:paddingRight="@dimen/padding_left"
+        android:layout_marginBottom="15sp"
+
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/divider"
+        android:layout_height="2sp"
+
+        android:background="@android:color/white"
+        android:layout_above="@id/tv_time"/>
+
+
+</RelativeLayout>
+
+</FrameLayout>
